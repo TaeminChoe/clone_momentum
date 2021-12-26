@@ -3,6 +3,7 @@ const toDoInput = document.querySelector('#todo-form input');
 const toDoList = document.querySelector('#todo-list');
 
 const TODOS_KEY = 'todos';
+const BTN_IMG = 'fas fa-minus-circle';
 
 let toDos = [];
 
@@ -38,10 +39,10 @@ function loadToDos() {
 function createTodo(newTodo) {
 	const li = document.createElement('li');
 	const span = document.createElement('span');
-	const btn = document.createElement('button');
-	const now = Date.now();
+	const btn = document.createElement('i');
+	btn.className = BTN_IMG;
+	btn.style.margin = '5px';
 	span.innerText = newTodo.value;
-	btn.innerText = 'X';
 	li.id = newTodo.id;
 
 	btn.addEventListener('click', delToDO);

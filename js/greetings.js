@@ -2,7 +2,6 @@ const loginForm = document.querySelector('.login-form');
 const loginInput = loginForm.querySelector('.username');
 const loginBtn = loginForm.querySelector('.button');
 const greeting = document.getElementById('greeting');
-// const gredding = document.querySelector('#gredding');
 
 const HIDDEN_CLASSNAME = 'hidden';
 const USERNAME_KEY = 'username';

@@ -1,3 +1,87 @@
+:root {
+	--font-color: #dddddd;
+}
+
+* {
+	color: var(--font-color);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .hidden {
 	display: none;
+}
+
+.login-form .username {
+	width: 200px;
+	color: black;
+	text-align: center;
+}
+
+.login-form .button {
+	color: black;
+}
+
+#clock {
+	font-size: 60px;
+	margin: 0px;
+}
+
+#greeting {
+	font-size: 80px;
+	margin: 0px;
+	text-align: center;
+}
+
+.quote {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	bottom: 10px;
+}
+
+.quote #eng {
+	font-size: 15px;
+	text-align: center;
+}
+
+#kor,
+#author {
+	font-size: 10px;
+}
+
+.weather {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#todo-form input {
+	width: 200px;
+	color: black;
+	text-align: center;
+}
+
+#todo-list {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+#todo-list li {
+	text-align: right;
+	list-style: none;
+}
+
+#todo-list li i {
+	cursor: pointer;
+}
+
+#todo-list li i:hover {
+	color: red;
 }
